@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" > <img src="data:image/png;base64,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" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mens</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">Womens</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">Kids</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            All Categories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#Mens">Mens</a></li>
+            <li><a class="dropdown-item" href="#Womens">Womens</a></li>
+            <!-- <li><hr class="dropdown-divider"></li> -->
+            <li><a class="dropdown-item" href="#">Kids</a></li>
+          </ul>
+      
+      </ul>
+      <!-- <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+   
+      <div class="btn">
+        <button type="button" class="btn btn-outline-primary">login</button>
+        <button type="button" class="btn btn-outline-primary">sign up</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- carousal  -->
+ <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.arzaan.pk/cdn/shop/articles/online-shopping-in-Pakistan.jpg?v=1633035087&width=2000" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i0.wp.com/www.sifascorner.com/wp-content/uploads/2020/09/Best-Online-Clothing-Stores-for-Budget-Shopping-Sifas-Corner-2-scaled.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.mother.ly/wp-content/uploads/2019/07/the-best-prime-day-clothes-for-kids-featured.webp" class="d-block w-100" alt="...">
+        </div>
+    </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+ <!-- mens -->
+<section id="Mens">
+  
+    <h1>Men's product </h1>
+
+    <div class=" parents-card d-flex">
+      <div class="card" style="width: 18rem;">
+  <img src="https://m.media-amazon.com/images/I/710o0VupScL._AC_UL640_FMwebp_QL65_.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">T-shirt</h5>
+    <p class="card-text">Gildan Men's Crew T-Shirts, Multipack, Style G1100.</p>
+    <a href="#" class="btn btn-warning">Add to cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://m.media-amazon.com/images/I/61EtWl8Ha-L._AC_UL480_FMwebp_QL65_.jpg" height="320px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Pants</h5>
+    <p class="card-text">Hanes Men's Essentials Jersey Sweatpants, Cotton Lounge Pants with Pockets for Men, 32” Inseam</p>
+    <a href="#" class="btn btn-warning">Add to cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://m.media-amazon.com/images/I/815htYNejRL._AC_UL480_FMwebp_QL65_.jpg" height="320px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Shaving Kits</h5>
+    <p class="card-text">Ufree Beard Trimmer for Men, Electric Razor Shaver, Cordless Hair Clipper Shaving Kit for Mustache Body Nose Ear Hair Facial</p>
+    <a href="#" class="btn btn-warning">Add to cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://m.media-amazon.com/images/I/71smSeu1sYL._AC_UL480_FMwebp_QL65_.jpg"height="320px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mens Socks</h5>
+    <p class="card-text">COOPLUS 12 Pack Mens Cushioned Ankle Socks, Low Cut Breathable Casual Socks (Shoe Size 6-11).</p>
+    <a href="#" class="btn btn-warning">Add to cart</a>
+  </div>
+</div>
+    </div>
+</section>
+
+<!--   women -->
+   <section id="Womens">
+  
+    <h1>Women's product </h1>
+
+    <div class=" parents-card d-flex">
+      <div class="card" style="width: 18rem;">
+  <img src="https://m.media-amazon.com/images/I/81bfbN1USPL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Oil</h5>
+    <p class="card-text">Gifts For Women Gift Basket for Women– 9 Piece Set of Vanilla Coconut Home Spa Set, Luxurious Valentines Day Gifts for Her, Bath and Body Sets Includes Fragrant Lotions, Large Bath Bombs, Coconut Oil</p>
+    <a href="#" class="btn btn-warning">Add to cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://m.media-amazon.com/images/I/816yw+HdyTL._AC_UL480_FMwebp_QL65_.jpg" height="360px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Sweater</h5>
+    <p class="card-text">AUTOMET Womens V Neck Long Sleeve Shirt Fall Fashion Tops Tunic Dressy Casual Sweater Clothes Cute Trendy Work Outfits 2026</p>
+    <a href="#" class="btn btn-warning">Add to cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://m.media-amazon.com/images/I/61K-ZELhzsL._AC_UL480_FMwebp_QL65_.jpg" height="360px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Pants</h5>
+    <p class="card-text">NEW YOUNG 3 Pack Women's Wide Leg Pants with Pockets High Waist Loose Sweatpants Casual Lounge Yoga Workout Palazzo</p>
+    <a href="#" class="btn btn-warning">Add to cart</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://m.media-amazon.com/images/I/81x8mjmCZrL._AC_UL480_FMwebp_QL65_.jpg"height="320px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Bracelets</h5>
+    <p class="card-text">Anne Klein Women's Bangle Watch and Premium Crystal Accented Bracelet Set.</p>
+    <a href="#" class="btn btn-warning">Add to cart</a>
+  </div>
+</div>
+    </div>
+</section>
+
+<!-- footer -->
+ 
+  
+
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+            
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Online Shopping</h5>
+                <p>Online shopping has transformed the global marketplace by turning every smartphone and computer into a personal storefront. It offers a level of convenience and variety that traditional retail simply can't match..</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Accessories</a></p>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Gift Cards</a></p>
+                <p><a href="#" class="text-white" style="text-decoration: none;">Shipping Policy</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> Pakistan  pk</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +01 234 567 88</p>
+            </div>
+
+        </div>
+
+        <hr class="mb-4">
+
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+                <p>© 2026 Copyright: <strong>Online shopping.com</strong></p>
+            </div>
+
+            <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+      
+  
+
+
+
+    
+</body>
+</html>
