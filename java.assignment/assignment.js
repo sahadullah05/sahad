@@ -428,6 +428,12 @@
 //   console.log(i);
 // }
 
+// quetion 4
+// let number = parseInt(prompt("Enter table number:"));
+// let length = parseInt(prompt("Enter table length:"));
+// for (let i = 1; i <= length; i++) {
+//   console.log(number + " x " + i + " = " + (number * i));
+// }
  
 
 
