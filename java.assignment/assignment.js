@@ -407,6 +407,36 @@
 // colorNames.push(newColor)
 // console.log(colorNames)
 
+// chap 17 to 20
+
+// quetion 1
+//  var array = [1, 2 , 3 ]
+//  console.log(array)
+//  array.push(5)
+
+// console.log(array)
+
+// quetion 2
+//  const matrix = [ [0, 1, 2 , 3], [1, 0,1 ,2 ] ,[2, 1, 0 , 1] 
+//  ]
+// console.log(matrix[2][3]); 
+// console.log(matrix[2][3]);
+
+// quetion3
+// Print numbers from 1 to 10
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
+
+ 
+
+
+
+
+
+
+
+
 
 
 
