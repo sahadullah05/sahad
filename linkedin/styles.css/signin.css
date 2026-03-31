@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f2f0; /* LinkedIn's signature light gray */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    padding: 24px 0 24px 50px;
+}
+
+.logo {
+    height: 68px;
+    margin-left: 150px;
+    width: 120px;
+    margin-top: -10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: rgba(0,0,0,0.9);
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid rgba(0,0,0,0.9);
+    border-radius: 4px;
+}
+
+/* Password Box with "Show" button */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.show-btn {
+    position: absolute;
+    right: 12px;
+    color: #0a66c2;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+}
+
+.checkbox-group input {
+    accent-color: #057642; /* Green checkbox like the original */
+    width: 18px;
+    height: 18px;
+}
+
+.policy-text {
+    font-size: 12px;
+    color: rgba(0,0,0,0.6);
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.policy-text a, .footer-link a, .business-help a {
+    color: #0a66c2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.agree-btn {
+    width: 100%;
+    background-color: #0a66c2;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.agree-btn a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* Or Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: rgba(0,0,0,0.6);
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+/* Social Buttons */
+.social-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 28px;
+    background: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.footer-link {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.business-help {
+    margin-top: 24px;
+    font-size: 14px;
+}
