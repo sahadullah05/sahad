@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pasword generation</title>
+    <style>
+        body{
+             font-family: Arial, sans-serif;
+        background: rgb(219, 219, 219);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        }
+
+        .container{
+            background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 320px;
+        }
+          h2 {
+        margin-bottom: 20px;
+    }
+
+    .password-box {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    input {
+        flex: 1;
+        padding: 10px;
+        border-radius: 8px  8px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        width: 23vw;
+    }
+     button {
+        padding: 10px;
+        border: none;
+        background: #667eea;
+        color: white;
+        cursor: pointer;
+        border-radius: 0 8px 8px 0;
+    }
+
+    button:hover {
+        background: #5a67d8;
+    }
+
+      .generate-btn {
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
+        background: #28a745;
+    }
+
+    .generate-btn:hover {
+        background: #218838;
+    }
+
+    .strength {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    </style>
+    
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>Password Generator </h1>
+        <div class="pass-box">
+            <input type="text" id="password">
+            
+        </div>
+
+         <button class="generate-btn" onclick="generatePassword()">Generate Password</button>
+       <div class="strength" id="strength"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+    <h2> Password Generator</h2>
+
+    <div class="password-box">
+        <input type="text" id="password" readonly>
+        <button onclick="copyPassword()"></button>
+    </div>
+
+    <button class="generate-btn" onclick="generatePassword()">Generate Password</button>
+
+    <div class="strength" id="strength"></div>
+</div> -->
+
+
+
+
+    <script src="password.js"></script>
+    
+</body>
+</html>
