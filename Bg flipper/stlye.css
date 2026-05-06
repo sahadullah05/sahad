@@ -1,0 +1,18 @@
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+button{
+    padding: 10px 80px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(179, 178, 218);
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+   cursor: pointer;
+}
