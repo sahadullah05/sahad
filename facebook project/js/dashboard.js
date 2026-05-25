@@ -95,7 +95,7 @@ currentUser = null;
 console.log("mery dashboard mai current user -->",currentUser);
 
 if(!currentUser){
-  window.location.href = "../index.html"
+  window.location.href = "../login.html"
 }
 
 }
